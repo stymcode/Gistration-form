@@ -62,9 +62,7 @@ app.get("/", (req, res) => {
                password
             });
         
-        
              await registrationData.save();
-        
              res.redirect("/success");
         }
         
