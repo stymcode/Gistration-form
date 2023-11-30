@@ -24,9 +24,9 @@ const registrationSchema = new mongoose.Schema({
      lastnsme: String,
      college: String,
      branch: String,
-     cgpa: Decimal128,
-     skill: String,
-     password: String
+     cgpa: Number,
+     email: String,
+     password: String,
 
 });
     
@@ -71,7 +71,6 @@ app.get("/", (req, res) => {
             college,
             branch,
             cgpa,
-            skill,
             email,
             password
             });
